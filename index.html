@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <link href="StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="table1">
+
+
+    </div>
+    <div id="table2">
+
+
+    </div>
+    <script src="sortable.js"></script>
+    <script src="checkbox.js"></script>
+    <script src="buttons.js"></script>
+    <script src="input.js"></script>
+    <script src="image.js"></script>
+    <script src="tables.js"></script>
+
+    <script type="text/javascript">   
+        var rows = [{
+            id: 0,
+            img: 'images/g.jpg',
+            name: 'jack',
+            age: 5,
+            member:true
+        }, {
+            id: 1,
+            img:'images/g.jpg',
+            name: 'jill',
+            age: 6,
+            member:false
+        }, {
+            id: 2,
+            img: 'images/w.jpg',
+            name: 'abc',
+            age: 8,
+            member: false
+
+        }, {
+            id: 3,
+            img: 'images/g.jpg',
+            name: 'zxy',
+            age: 45,
+            member: true
+
+        }, {
+            id: 4,
+            img: 'images/w.jpg',
+            name: 'lkj',
+            age: 21,
+            member: true
+        }];
+        var parentNode = document.getElementById('table1');
+       
+        var mytable = new makeTable(parentNode, rows);
+    </script>
+</body>
+</html>
